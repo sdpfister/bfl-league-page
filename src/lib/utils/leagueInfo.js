@@ -7,12 +7,29 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h3>Welcome to the Official BFL Website</h3>
+
+<p>Welcome to the official website of the Best Friends League (BFL), where a bunch of knuckleheads have been battling it out in fake football since 2017. The BFL started on ESPN but migrated over to Sleeper in 2019, four seasons ago. Now with the creation of this website, we have a place to memorialize the legendary moments, crushing losses, and general nonsense that keeps this league together. Let the fantasy madness begin!</p>
+
+<h3>About the Site</h3>
+
+<p>This site brings the full BFL experience together in one place. Dig into historical and current rosters, all-time rankings across crucial stats, head-to-head rival matchups, trades, waivers, standings, and draft results from all seasons. Relive past glories in the Trophy Room. Scope the Records section for feats like the highest single-week scores, lowest single-week shockers, and biggest blowouts.</p>
+
+<p>Coming soon - deeper stats and analysis, player and team data, trending player trackers, chat, forums, and a one-stop hub for fantasy resources and news. The future roadmap also includes power rankings, polls, weekly awards, league history, and more tools for endless trash-talk fodder and fantasy insights.</p>
+
+<p>We'll be working hard to make this a premier fantasy football league site and a one-stop shop for BFL managers. Whether you're catching up on league happenings or prepping for the next verbal battle, this site will provide everything you need to dominate the competition both on and off the virtual field.</p>
+
+<p>So bookmark this site for your one-stop shop of fantasy football news, trash talk, and general heckling. And may the football gods have mercy on your soul, because we sure as hell won't!</p>
+
+<h3>About the League</h3>
+
+<p>This band of misfits first came together at Free To Choose Network (FTCN), where debating starting lineups and trash-talking each other took priority over actually getting any work done. The core crew of VP of Technology Shane, Video Team Lead Charles, Graphic Designer Mike, and Shipping Manager Matt have been there since the beginning, debating draft picks and matchups instead of working. Even after Shawn and Nick fled FTCN to escape our fantasy football obsession, they stuck around the league to keep racking up losses.</p>
+
+<p>After six years of respectable leadership, Commissioner Shawn stepped down and passed the torch to Charles. Of course, wild conspiracy theories abounded about his sudden resignation. Some claimed he was actually forced out in a deep-state fantasy football coup. Others were convinced he was leaving to breed exotic birds full-time. My personal favorite rumor was that he abandoned his post to join a competitive log-rolling league. But really, after half a decade, Shawn was just tired of the administrative duties and extensive time commitment required of the commissioner. Handing off the reins allows him to focus on his own team and indulge in carefree trash talk with the rest of us hooligans.</p>
+
+<p>But the biggest storyline this season is the league's new expansion team, graciously bankrolled by FTCN CEO, Rob. Though new to our league, he's been begging to join the big boys for years, and we finally took pity on him. Just kidding - we just wanted his money. Hope you're ready to be the league's punching bag, Rook!</p>
+
+<p>And so another season of fantasy football madness begins. From nail-biting wins to blowout defeats, lineup blunders to waiver wire brilliance, thrilling upsets to painful choke jobs - it will be filled with equal parts joy and agony. But through all the virtual ups and downs, one thing remains constant in the BFL - the endless, ruthless heckling and trash talk amongst friends. Because win or lose, the only thing that matters is making sure everyone else goes down in flames too. May the best trash-talker prevail!</p>  
 `;
 
 /*   STEP 3   */

@@ -82,7 +82,10 @@
 </style>
 
 <nav>
-	<a href="/"><img id="logo" alt="league logo" src="./bfl.png" /></a>
+	<a href="/">
+		<!--Best Friends League-->
+		<img id="logo" alt="league logo" src="./bfl_120w.png" />
+	</a>
 
 	<div class="container">
 		<IconButton
