@@ -190,8 +190,22 @@
             {/await}
         </div>
 
-        <div class="transactions" >
-            <Transactions />
-        </div>
+        
+        {#await nflState}
+            <div class="center">Retrieving NFL state...</div>
+            <LinearProgress indeterminate />
+        {:then nflStateData}
+            <div class="homeBanner" style="text-align: center;">Recent Transactions</div>
+                {#if nflStateData.season_type == 'pre'}
+                    <p class="center">Preseason - Transactions Coming Soon!</p>
+                {:else}
+                <div class="transactions" >
+                    <Transactions />
+                </div>
+                {/if}
+        {:catch error}
+            <div class="center">Something went wrong: {error.message}</div>
+        {/await}
+            
     </div>
 </div>
