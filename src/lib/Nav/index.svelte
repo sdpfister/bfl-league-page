@@ -84,7 +84,7 @@
 <nav>
 	<a href="/">
 		<!--Best Friends League-->
-		<img id="logo" alt="league logo" src="./bfl_120w.png" />
+		<img id="logo" alt="league logo" src="./bfl_badge.png" />
 	</a>
 
 	<div class="container">
