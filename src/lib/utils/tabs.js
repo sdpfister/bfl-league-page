@@ -73,9 +73,27 @@ export const tabs = [
             },
         ]
     },
-    {
+    /* {
+        icon: 'info',
+        label: 'About',
+        nest: true,
+        children: [
+            {
+                icon: 'history',
+                label: 'About the League',
+                dest: '/about-league',
+            },
+            {
+                icon: 'language',
+                label: 'About the Site',
+                dest: '/about-site',
+            },
+        ]
+    }, */
+   /*  {
         icon: 'lightbulb',
         label: 'Resources',
         dest: '/resources',
-    },
+    }, */
+    
 ];
