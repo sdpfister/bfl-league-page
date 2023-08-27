@@ -61,10 +61,25 @@ export const tabs = [
                 label: 'Records',
                 dest: '/records',
             },
-            {
+            /* {
                 icon: 'history_edu',
                 label: 'Constitution',
                 dest: '/constitution',
+            }, */
+            {
+                icon: 'history',
+                label: 'About League',
+                dest: '/about-league',
+            },
+            {
+                icon: 'language',
+                label: 'About Site',
+                dest: '/about-site',
+            },
+            {
+                icon: 'add_road',
+                label: 'Roadmap',
+                dest: '/roadmap',
             },
             {
                 icon: 'sports_football',
