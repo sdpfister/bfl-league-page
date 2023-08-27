@@ -3,6 +3,8 @@
 	import { getNflState, leagueName, getAwards, getLeagueTeamManagers, homepageText, managers, gotoManager, enableBlog, waitForAll } from '$lib/utils/helper';
 	import { Transactions, PowerRankings, HomePost} from '$lib/components';
 	import { getAvatarFromTeamManagers, getTeamFromTeamManagers } from '$lib/utils/helperFunctions/universalFunctions';
+    import Button, { Label } from '@smui/button';
+    import { goto } from '$app/navigation';
 
     const nflState = getNflState();
     const podiumsData = getAwards();
@@ -143,6 +145,14 @@
             <!-- homepageText contains the intro text for your league, this gets edited in /src/lib/utils/leagueInfo.js -->
             {@html homepageText }
             <!-- Most recent Blog Post (if enabled) -->
+            <div class="center">
+                <Button on:click={() => goto('/about-league')} variant="raised">
+                    <Label>About the League</Label>
+                </Button>
+                <Button on:click={() => goto('/about-site')} variant="raised">
+                    <Label>About the Site</Label>
+                </Button>                
+            </div>
             {#if enableBlog}
                 <HomePost />
             {/if}
