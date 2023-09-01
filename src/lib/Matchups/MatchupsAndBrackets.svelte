@@ -72,30 +72,35 @@
     </div>
 {:else}
     {#if matchupWeeks.length}
+        <!-- Playoffs Currently broken -->
+        <!-- Comment out both buttons for now and revisit later -->
+        <!--         
         <div class="buttonHolder">
             <Group variant="outlined">
+                -->
                 <!-- Regular Season -->
-                <Button class="selectionButtons" on:click={() => changeSelection('regular')} variant="{selection == 'regular' ? "raised" : "outlined"}">
+                <!-- <Button class="selectionButtons" on:click={() => changeSelection('regular')} variant="{selection == 'regular' ? "raised" : "outlined"}">
                     <Label>Regular Season</Label>
-                </Button>
+                </Button> -->
                 <!-- Championship Bracket -->
-                <Button class="selectionButtons" on:click={() => changeSelection('champions')} variant="{selection == 'champions' || selection == 'losers' ? "raised" : "outlined"}">
+                <!-- <Button class="selectionButtons" on:click={() => changeSelection('champions')} variant="{selection == 'champions' || selection == 'losers' ? "raised" : "outlined"}">
                     <Label>Playoffs</Label>
-                </Button>
-            </Group>
+                </Button> -->
+            <!-- </Group>
             {#if selection == 'champions' || selection == 'losers'}
-                <Group variant="outlined">
+                <Group variant="outlined"> -->
                     <!-- Championship Bracket -->
-                    <Button class="selectionButtons" on:click={() => changeSelection('champions')} variant="{selection == 'champions' ? "raised" : "outlined"}">
+                    <!-- <Button class="selectionButtons" on:click={() => changeSelection('champions')} variant="{selection == 'champions' ? "raised" : "outlined"}">
                         <Label>Champions' Bracket</Label>
-                    </Button>
+                    </Button> -->
                     <!-- Losers Bracket -->
-                    <Button class="selectionButtons" on:click={() => changeSelection('losers')} variant="{selection == 'losers' ? "raised" : "outlined"}">
+                    <!-- <Button class="selectionButtons" on:click={() => changeSelection('losers')} variant="{selection == 'losers' ? "raised" : "outlined"}">
                         <Label>Losers' Bracket</Label>
                     </Button>
                 </Group>
             {/if}
-        </div>
+        </div> 
+        -->
         {#if selection == 'regular'}
             <MatchupWeeks {players} {queryWeek} {matchupWeeks} {regularSeasonLength} {year} {week} bind:selection={selection} {leagueTeamManagers} />
         {/if}
