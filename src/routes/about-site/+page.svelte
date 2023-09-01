@@ -24,10 +24,6 @@
     .subBlock {
         margin-left: 2.4em;
     }
-
-    p {
-        color: #000000;
-    }
 </style>
 
 <div class="about">
