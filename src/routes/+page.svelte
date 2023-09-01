@@ -151,7 +151,8 @@
                 </Button>
                 <Button on:click={() => goto('/about-site')} variant="raised">
                     <Label>About the Site</Label>
-                </Button>                
+                </Button> 
+                <br/><br/><br/>               
             </div>
             {#if enableBlog}
                 <HomePost />
