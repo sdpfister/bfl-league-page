@@ -25,6 +25,8 @@
 		document.head
 		.querySelector('link[href="/smui-dark.css"]')
 		.insertAdjacentElement("afterend", themeLink);
+
+		themeStore.set(lightTheme ? "light" : "dark");
 	}
 </script>
 

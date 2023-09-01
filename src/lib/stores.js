@@ -15,3 +15,12 @@ export const news = writable([]);
 export const posts = writable([]);
 export const brackets = writable({});
 export const standingsStore = writable({});
+
+// Initialize with "light" or "dark" based on user preference
+let initialTheme;
+if (typeof window !== "undefined") {
+  initialTheme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+} else {
+  initialTheme = "light"; // default value for server-side rendering
+}
+export const themeStore = writable(initialTheme);
