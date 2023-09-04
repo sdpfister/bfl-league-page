@@ -2,6 +2,10 @@ import contentful from 'contentful';
 import { json, error } from '@sveltejs/kit';
 
 export async function GET() {
+    // Debug: Print environment variables to console
+    console.log('Contentful Space ID:', import.meta.env.VITE_CONTENTFUL_SPACE);
+    console.log('Contentful Access Token:', import.meta.env.VITE_CONTENTFUL_CLIENT_ACCESS_TOKEN);
+
     if(!import.meta.env.VITE_CONTENTFUL_CLIENT_ACCESS_TOKEN) {
         throw error(500, "Missing VITE_CONTENTFUL_CLIENT_ACCESS_TOKEN (added dependency in v2.0), go to https://github.com/nmelhado/league-page/blob/master/TRAINING_WHEELS.md#iii-add-a-blog for directions to add it");
     }
