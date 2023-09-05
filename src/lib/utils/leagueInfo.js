@@ -7,7 +7,7 @@ export const enableBlog = true; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VIT
 
 /*   STEP 2   */
 export const homepageText = `
-<h5 class="center">Welcome to the Official BFL Website</h5>
+<h5 class="center">Welcome to the Official BFL HQ Website</h5>
 
 <p>Welcome to the official website of the Best Friends League (BFL), where a bunch of knuckleheads have been battling it out in fake football since 2017. The BFL started on ESPN but migrated over to Sleeper in 2019, four seasons ago. Now with the creation of this website, we have a place to memorialize the legendary moments, crushing losses, and general nonsense that keeps this league together. Let the fantasy madness begin!</p>
 </br>
