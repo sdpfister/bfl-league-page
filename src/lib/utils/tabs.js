@@ -18,9 +18,14 @@ export const tabs = [
     },
     {
         icon: 'article',
-        label: 'Blog',
+        label: 'The BFL SmackTalk',
         dest: '/blog',
     },
+    // {
+    //     icon: 'article',
+    //     label: 'Blog',
+    //     dest: '/blog',
+    // },
     {
         icon: 'view_comfy',
         label: 'League Info',

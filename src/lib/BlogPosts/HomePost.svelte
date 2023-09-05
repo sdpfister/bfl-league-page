@@ -76,9 +76,10 @@
         <LinearProgress indeterminate />
     </div>
 {:else}
-    <h2>League Blog</h2>
+    <h6 class="center">The BFL SmackTalk Blog</h6>
     <Post {leagueTeamManagers} {post} {createdAt} home={true} />
     <div class="center">
         <a class="viewAll" href="/blog">View More Blog Posts</a>
     </div>
+    <br/>
 {/if}
