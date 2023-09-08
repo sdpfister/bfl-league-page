@@ -4,7 +4,7 @@
 	import { tabs } from '$lib/utils/tabs';
 	import { onMount } from 'svelte';
 
-	let outOfDate = false;
+	// let outOfDate = false;
 
     let el, footerHeight;
 
@@ -22,12 +22,12 @@
         }
     }
 
-	onMount(async () => {
-		const res = await fetch('/api/checkVersion', {compress: true})
-		const needUpdate = await res.json();
-		outOfDate = needUpdate;
-        resize(el?.getBoundingClientRect(), true);
-	})
+	// onMount(async () => {
+	// 	const res = await fetch('/api/checkVersion', {compress: true})
+	// 	const needUpdate = await res.json();
+	// 	outOfDate = needUpdate;
+    //     resize(el?.getBoundingClientRect(), true);
+	// })
 
     let managersOutOfDate = false;
     if(managers) {
@@ -89,24 +89,24 @@
 		color: #920505;
 	}
 
-	.updateNotice {
+	/* .updateNotice {
 		color: var(--g999);
 		font-style: italic;
 		font-size: 0.8em;
 		margin-top: 0;
-	}
+	} */
 </style>
 
 <div class="footerSpacer" style="height: {footerHeight}px;" />
 
 <!-- footer with update notice -->
 <footer bind:this={el}>
-    {#if outOfDate}
+    <!-- {#if outOfDate}
 	    <p class="updateNotice">There is an update available for your League Page. <a href="https://github.com/nmelhado/league-page/blob/master/TRAINING_WHEELS.md#iv-updates">Follow the Update Instructions</a> to get all of the newest features!</p>
     {/if}
     {#if managersOutOfDate}
 	    <p class="updateNotice">Your managers page needs an update, <a href="https://github.com/nmelhado/league-page/blob/master/TRAINING_WHEELS.md#2-add-managers">please follow the instructions</a> to get the most up-to-date experience.</p>
-    {/if}
+    {/if} -->
 	<div id="navigation">
 		<ul>
 			{#each tabs as tab}
@@ -123,5 +123,5 @@
 			{/each}
 		</ul>
 	</div>
-	<p>© {year} Best Friends League</p>
+	<p>© {year} BFL HQ</p>
 </footer>
