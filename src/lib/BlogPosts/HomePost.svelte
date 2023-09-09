@@ -80,8 +80,6 @@
     </div>
 {:else}
     <h6 class="center">The BFL SmackTalk Blog</h6>
-    <Post {leagueTeamManagers} {post} {createdAt} home={true} />
-    <h2>League Blog</h2>
     <Post {leagueTeamManagers} {post} {createdAt} {id} />
     <div class="center">
         <a class="viewAll" href="/blog">View More Blog Posts</a>
