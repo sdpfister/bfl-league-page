@@ -39,6 +39,16 @@
         <p>So bookmark this site for your one-stop shop of fantasy football news, trash talk, and general heckling. And may the football gods have mercy on your soul, because we sure as hell won't!</p>
     </div>
 
+    <br/>
+
+    <h4>Feature Request</h4>
+
+    <div class="subBlock">
+        <p>Got an idea to make our fantasy football league experience even better? We'd love to hear from you! Check out our <a href="/feedback">Feature Request</a> page to share your suggestions. Your input is invaluable as we strive to continuously improve the site.</p>
+    </div>
+
+    <br/>
+
     <h4>Site Roadmap</h4>
 
     <div class="subBlock">

@@ -82,6 +82,11 @@ export const tabs = [
                 dest: '/about-site',
             },
             {
+                icon: 'feedback',
+                label: 'Feature Req.',
+                dest: '/feedback',
+            },
+            {
                 icon: 'add_road',
                 label: 'Roadmap',
                 dest: '/roadmap',
