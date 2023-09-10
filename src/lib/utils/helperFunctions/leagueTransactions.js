@@ -41,6 +41,9 @@ export const getLeagueTransactions = async (preview, refresh = false) => {
 
 	const { transactions, totals } = await digestTransactions({transactionsData, currentSeason});
 
+	// filter transactions based on the current season
+	// const currentSeasonTransactions = transactions.filter(transaction => transaction.season === currentSeason);
+
 	const transactionPackage = {
 		transactions,
 		totals
@@ -63,18 +66,17 @@ export const getLeagueTransactions = async (preview, refresh = false) => {
 
 const checkPreview = (preview, passedTransactions) => {
 	if(preview) {
-		// If this is being used for a preview component, only grab 2 trades and waivers
-		const previewToReturn = 3;
+		const tradesToReturn = 2;
+		const waiversToReturn = 4;
 
 		const trades = [];
 		const waivers = [];
 		
 		let i = 0;
-		while((trades.length < previewToReturn || waivers.length < previewToReturn) && i < passedTransactions.length) {
-			if(passedTransactions[i].type == "waiver" && waivers.length < previewToReturn) {
+		while((trades.length < tradesToReturn || waivers.length < waiversToReturn) && i < passedTransactions.length) {
+			if(passedTransactions[i].type == "waiver" && waivers.length < waiversToReturn) {
 				waivers.push(passedTransactions[i]);
-			} else if(passedTransactions[i].type == "trade" && trades.length < previewToReturn) {
-
+			} else if(passedTransactions[i].type == "trade" && trades.length < tradesToReturn) {
 				trades.push(passedTransactions[i]);
 			}
 			i++;
