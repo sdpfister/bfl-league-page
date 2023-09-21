@@ -2,7 +2,7 @@
 	import { tabs } from '$lib/utils/tabs';
 	import NavSmall from './NavSmall.svelte';
 	import NavLarge from './NavLarge.svelte';
-    import { page } from '$app/stores';	
+    	import { page } from '$app/stores';	
 	import IconButton from '@smui/icon-button';
 	import { Icon } from '@smui/common';
 
@@ -86,7 +86,7 @@
 <nav>
 	<a href="/">
 		<!--Best Friends League-->
-		<img id="logo" alt="league logo" src="./bfl_badge.png" />
+		<img id="logo" alt="league logo" src="/bfl_badge.png" />
 	</a>
 
 	<div class="container">
