@@ -15,6 +15,7 @@ export const news = writable([]);
 export const posts = writable([]);
 export const brackets = writable({});
 export const standingsStore = writable({});
+export const playoffStandingsStore = writable({});
 
 // Initialize with "light" or "dark" based on user preference
 let initialTheme;

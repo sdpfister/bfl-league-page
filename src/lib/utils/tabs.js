@@ -52,6 +52,11 @@ export const tabs = [
                 dest: '/standings',
             },
             {
+                icon: 'sports_score',
+                label: 'Playoff Standings',
+                dest: '/playoff-standings',
+            },
+            {
                 icon: 'view_comfy',
                 label: 'Drafts',
                 dest: '/drafts',
